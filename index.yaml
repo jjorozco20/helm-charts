@@ -3,11 +3,11 @@ entries:
   flask-app:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-30T13:03:47.730450156-06:00"
+    created: "2025-01-30T13:15:51.3295313-06:00"
     description: A Helm chart for Flask App and MySQL
     digest: 07bbef2f67b1fbb951efb297e556895c2160ab551c09d29205081d5993a578b3
     name: flask-app
     urls:
     - https://jjorozco20.github.io/helm-charts/flask-app-1.0.0.tgz
     version: 1.0.0
-generated: "2025-01-30T13:03:47.718345776-06:00"
+generated: "2025-01-30T13:15:51.322858-06:00"

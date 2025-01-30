@@ -1,0 +1,35 @@
+---
+replicaCount: 1
+
+image:
+  repository: jjorozco20/flask-mysql-app
+  tag: "1.0.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5000
+
+ingress:
+  enabled: true
+  host: flask.local
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+
+mysql:
+  rootPassword: rootpassword
+  database: testdb
+  storage: 5Gi
+
+serviceAccount:
+  create: false
+
+autoscaling:
+  enabled: false
+
+# Ensure there is no mention of Locust or Grafana
+locust:
+  enabled: false
+
+grafana:
+  enabled: false
