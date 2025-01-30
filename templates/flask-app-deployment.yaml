@@ -18,14 +18,14 @@ spec:
         prometheus: main  # Add the prometheus label
       annotations:
         prometheus.io/scrape: "true"
-        prometheus.io/port: "5000"
+        prometheus.io/port: "5001"
         prometheus.io/path: "/metrics"
     spec:
       containers:
       - name: flask-app
         image: jjorozco20/flask-mysql-app:1.0.0  # Updated image version
         ports:
-        - containerPort: 5000
+        - containerPort: 5001
         env:
         - name: MYSQL_HOST
           value: "mysql"  # Kubernetes internal service name for MySQL
@@ -59,9 +59,9 @@ metadata:
   namespace: default  # Ensured namespace is set correctly
 spec:
   ports:
-    - port: 5000  # Flask app runs on port 5000 inside the cluster
+    - port: 5001  # Flask app runs on port 5001 inside the cluster
       protocol: TCP
-      targetPort: 5000
+      targetPort: 5001
   selector:
     app: flask-app  # Ensure the selector matches the label in Deployment
   type: ClusterIP  # Expose the service on a cluster-internal IP
@@ -90,4 +90,4 @@ spec:
           service:
             name: flask-app  # Service name correctly referenced
             port:
-              number: 5000
+              number: 5001

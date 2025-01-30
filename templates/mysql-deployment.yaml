@@ -6,7 +6,7 @@ metadata:
   namespace: default  # Added namespace
 spec:
   capacity:
-    storage: 5Gi  # Specify 5 GiB of storage
+    storage: "5Gi"  # Specify 5 GiB of storage
   accessModes:
     - ReadWriteOnce  # Access mode (single node read/write)
   hostPath:
@@ -22,7 +22,7 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi  # Request the same size as the PV
+      storage: "5Gi"  # Request the same size as the PV
 
 ---
 apiVersion: v1
