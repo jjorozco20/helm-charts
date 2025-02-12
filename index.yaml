@@ -1,13 +1,33 @@
+---
 apiVersion: v1
 entries:
   flask-app:
   - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-02-12T14:02:53.134816777-06:00"
+    description: A Helm chart for Flask App and MySQL
+    digest: fde9f8127a4567f39439c729c7d5b6bb90953a9e9e55287f72a8b749d03a4f96
+    name: flask-app
+    urls:
+    - https://jjorozco20.github.io/helm-charts/flask-app-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-30T13:15:51.3295313-06:00"
+    created: "2025-02-12T14:02:53.116497639-06:00"
     description: A Helm chart for Flask App and MySQL
     digest: 07bbef2f67b1fbb951efb297e556895c2160ab551c09d29205081d5993a578b3
     name: flask-app
     urls:
     - https://jjorozco20.github.io/helm-charts/flask-app-1.0.0.tgz
     version: 1.0.0
-generated: "2025-01-30T13:15:51.322858-06:00"
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-02-12T14:02:53.099107824-06:00"
+    description: A Helm chart for Kubernetes
+    digest: e6828588b3afbf2b5b2394df3201fc7c17229a8ee88b48b38c78ea1b6f6031b5
+    name: flask-app
+    type: application
+    urls:
+    - https://jjorozco20.github.io/helm-charts/flask-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-02-12T14:02:53.079167367-06:00"
